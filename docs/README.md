@@ -108,4 +108,4 @@ Located in `/prompts/` directory:
 
 ## License and Attribution
 
-GenerativeLife is open source software. See main README for licensing details and contribution guidelines.
+GenerativeLife is open source software. See main README for licensing details and contribution guidelines .

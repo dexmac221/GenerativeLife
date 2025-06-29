@@ -25,7 +25,7 @@ GenerativeLife is ideal for researchers, developers, and enthusiasts interested 
 
 - **Documentation**: [docs/](docs/)
 - **Examples**: Check the `data/sessions/` directory for simulation examples
-- **Issues**: [GitHub Issues](https://github.com/yourusername/GenerativeLife/issues)
+- **Issues**: [GitHub Issues](https://github.com/dexmac221/GenerativeLife/issues)
 
 ---
 
@@ -65,7 +65,7 @@ Ollama (for local LLM) or OpenAI API key
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/GenerativeLife.git
+git clone https://github.com/dexmac221/GenerativeLife.git
 cd GenerativeLife
 
 # Create virtual environment
@@ -263,7 +263,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## � **Links**
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/GenerativeLife/issues)
+- **Issues**: [GitHub Issues](https://github.com/dexmac221/GenerativeLife/issues)
 - **Documentation**: [docs/](docs/)
 - **Examples**: Check the `data/sessions/` directory for simulation examples
 

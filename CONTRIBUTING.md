@@ -7,7 +7,7 @@ Thank you for your interest in contributing to GenerativeLife! This document pro
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/yourusername/GenerativeLife.git
+   git clone https://github.com/dexmac221/GenerativeLife.git
    cd GenerativeLife
    ```
 3. **Create a virtual environment**:

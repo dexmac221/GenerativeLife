@@ -10,7 +10,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="GenerativeLife Contributors",
-    url="https://github.com/yourusername/GenerativeLife",
+    url="https://github.com/dexmac221/GenerativeLife",
     packages=find_packages(),
     install_requires=[
         "pygame>=2.5.2",
