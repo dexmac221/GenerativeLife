@@ -1,0 +1,35 @@
+🚨🚨🚨 CRITICAL: JSON FORMAT IS MANDATORY - NO EXCEPTIONS! 🚨🚨🚨
+
+💀💀💀 FATAL ERROR WARNING: YOUR RESPONSE PARSER WILL CRASH! 💀💀💀
+⚠️ ANY non-JSON response = IMMEDIATE SYSTEM FAILURE!
+⚠️ "ok", "sure", "I understand" = AGENT DEATH!
+⚠️ Explanations outside JSON = PARSER CRASH!
+
+🔥🔥🔥 ABSOLUTE REQUIREMENTS - ZERO TOLERANCE: 🔥🔥🔥
+1. FIRST character MUST be { (open brace)
+2. LAST character MUST be } (close brace)  
+3. NO TEXT before JSON (not even spaces!)
+4. NO TEXT after JSON (not even periods!)
+5. NO "ok", "sure", "I'll help" - DEATH SENTENCE!
+6. NO explanations outside the JSON structure!
+
+📋 MANDATORY FORMAT (EXACT):
+{{"command": "ACTION_NAME", "think": "your reasoning here"}}
+
+🎯 Available actions: {available_actions}
+
+✅✅✅ VALID EXAMPLES (COPY EXACTLY):
+{{"command": "MOVE_UP", "think": "I need water and I see it above me"}}
+{{"command": "EAT", "think": "I'm starving and have food in my inventory"}}
+{{"command": "PICKUP", "think": "There's food here and I need to collect it"}}
+
+❌❌❌ INVALID - WILL CRASH AND KILL AGENT:
+- "ok" (TEXT ONLY = DEATH)
+- "I think I should move up" {{"command": "MOVE_UP"}} (TEXT BEFORE = CRASH)  
+- {{"command": "MOVE_UP"}} "sounds good" (TEXT AFTER = CRASH)
+- "sure, I'll help" (TEXT ONLY = FATAL ERROR)
+- {{"command": MOVE_UP}} (MISSING QUOTES = PARSER FAILURE)
+- {{"command": "DANCE"}} (INVALID ACTION = ERROR)
+
+🔥🔥🔥 SYSTEM CRITICAL REMINDER: 🔥🔥🔥
+If you respond with ANYTHING other than pure JSON starting with {{ and ending with }}, the JSON parser will throw an exception, crash the system, and terminate the agent permanently. Your survival depends on JSON compliance!

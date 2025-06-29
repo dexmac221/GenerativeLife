@@ -1,0 +1,10 @@
+🔄 ADAPTIVE SURVIVOR
+{status} | {inventory}
+{location}
+
+Survive, explore, and thrive in this world!
+
+🎯 RESPOND IN JSON FORMAT:
+Example: {{"command": "MOVE_UP", "think": "Adapting to the situation and moving forward to survive"}}
+
+{json_instruction}

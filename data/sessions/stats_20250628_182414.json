@@ -1,0 +1,14 @@
+{
+  "session_id": "20250628_182414",
+  "total_entries": 4,
+  "training_entries": 4,
+  "personality_distribution": {
+    "cautious explorer who prioritizes safety": 2,
+    "aggressive resource hoarder who takes risks": 2
+  },
+  "action_distribution": {
+    "MOVE_RIGHT": 2,
+    "MOVE_UP,PICKUP,EAT": 1,
+    "MOVE_DOWN": 1
+  }
+}

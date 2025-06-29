@@ -1,0 +1,129 @@
+# GenerativeLife Configuration Template
+# Copy this file to config.yaml and customize for your setup
+
+# ===========================================
+# AGENT SURVIVAL PARAMETERS
+# ===========================================
+# Fine-tune agent survival thresholds for different simulation scenarios
+
+survival:
+  # Hunger thresholds (0-100 scale, death at 100)
+  hunger:
+    critical: 85          # EAT NOW OR DIE! - Emergency survival mode
+    urgent: 60            # EAT immediately - High priority action
+    high_priority: 40     # EAT when convenient - Normal eating behavior
+    medium_priority: 25   # Consider eating - Proactive food management
+    
+  # Thirst thresholds (0-100 scale, death at 100)  
+  thirst:
+    critical: 85          # DRINK NOW OR DIE! - Emergency survival mode
+    urgent: 60            # DRINK immediately - High priority action
+    high_priority: 40     # DRINK when convenient - Normal drinking behavior
+    medium_priority: 25   # Consider drinking - Proactive water management
+    
+  # Energy thresholds (0-100 scale, death at 0)
+  energy:
+    critical: 15          # Death imminent - No non-essential actions
+    low: 30              # Conserve movements - Limited action budget
+    breeding_min: 50      # Minimum energy required for reproduction
+
+# ===========================================
+# AI CONTROLLER BEHAVIOR
+# ===========================================
+# Configure different AI decision-making systems
+
+ai_behavior:
+  # Simple Rule-Based Controller
+  simple_controller:
+    high_priority_hunger: 50     # Hunger level triggering immediate food search
+    high_priority_thirst: 50     # Thirst level triggering immediate water search
+    medium_priority_hunger: 30   # Hunger level for opportunistic eating
+    medium_priority_thirst: 30   # Thirst level for opportunistic drinking
+    emergency_energy: 20         # Energy level triggering survival mode
+    basic_needs_hunger: 40       # Standard hunger management threshold
+    basic_needs_thirst: 40       # Standard thirst management threshold
+    
+  # Advanced Language Model Controller
+  vlm_controller:
+    urgent_hunger: 70            # Hunger level for urgent eating prompts
+    urgent_thirst: 70            # Thirst level for urgent drinking prompts
+    recommended_hunger: 40       # Hunger level for eating recommendations
+    recommended_thirst: 40       # Thirst level for drinking recommendations
+    low_priority_hunger: 20      # Hunger level for low-priority eating hints
+    low_priority_thirst: 20      # Thirst level for low-priority drinking hints
+    resource_shortage_hunger: 70 # Hunger threshold during resource scarcity
+    resource_shortage_thirst: 70 # Thirst threshold during resource scarcity
+
+# ===========================================
+# BREEDING AND POPULATION
+# ===========================================
+# Control agent reproduction and population dynamics
+
+breeding:
+  min_age: 50                   # Minimum age before agents can reproduce
+  pregnancy_duration: 30        # Number of turns for pregnancy to complete
+  max_population: 50            # Maximum agents before breeding restrictions
+  min_energy: 50               # Minimum energy required for breeding attempts
+  fertility_decline_age: 200    # Age when fertility begins declining
+
+# ===========================================
+# RESOURCE MANAGEMENT
+# ===========================================
+# Configure inventory limits and resource collection behavior
+
+resources:
+  max_inventory_food: 2         # Maximum food items an agent can carry
+  max_inventory_water: 2        # Maximum water items an agent can carry
+  pickup_threshold_food: 2      # Food items needed before pickup priority increases
+  pickup_threshold_water: 2     # Water items needed before pickup priority increases
+
+# ===========================================
+# WORLD PARAMETERS
+# ===========================================
+# Configure the simulation environment
+
+world:
+  default_width: 15             # Default world width (can be overridden by command line)
+  default_height: 20            # Default world height (can be overridden by command line)
+  observation_radius: 2         # How far agents can see around themselves
+
+# ===========================================
+# PERFORMANCE SETTINGS
+# ===========================================
+# Optimize simulation performance and data collection
+
+performance:
+  stats_report_interval: 10     # How often to print population statistics
+  memory_size: 50              # Number of memories each agent retains
+  recent_memories_count: 5      # Number of recent memories to prioritize
+
+# ===========================================
+# DEATH CONDITIONS (Reference)
+# ===========================================
+# These values are handled automatically by the agent system
+
+death_conditions:
+  hunger_death: 100            # Hunger level that causes death
+  thirst_death: 100            # Thirst level that causes death  
+  energy_death: 0              # Energy level that causes death
+
+# ===========================================
+# CONFIGURATION TIPS
+# ===========================================
+#
+# For Research Simulations:
+# - Set higher survival thresholds for more challenging conditions
+# - Increase max_population for larger scale studies
+# - Adjust breeding parameters for population dynamics research
+#
+# For Game Development:
+# - Lower survival thresholds for more forgiving gameplay
+# - Adjust observation_radius for different difficulty levels
+# - Modify resource limits for inventory management mechanics
+#
+# For AI Training:
+# - Use stricter survival conditions to generate crisis scenarios
+# - Adjust VLM controller thresholds for different training objectives
+# - Modify world size for different spatial reasoning challenges
+#
+# Remember to restart the simulation after changing configuration values!

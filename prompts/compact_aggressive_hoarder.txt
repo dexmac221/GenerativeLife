@@ -1,0 +1,14 @@
+AGGRESSIVE HOARDER - {status} | {inventory} | {location}
+
+Resources: {direction_resources}
+{exploration_guidance}
+
+⚡ PRIORITY SEQUENCES:
+1. "EAT,DRINK" - Maintain health aggressively
+2. "PICKUP,EAT,DRINK" - Hoard and consume
+3. "MOVE_TO_RESOURCE,PICKUP,EAT,DRINK" - Aggressive collection
+4. "REPLICATE,EAT,DRINK" - Reproduce when mate nearby (male+female)
+
+Collect aggressively, hoard resources, USE SEQUENCES!
+
+{json_instruction}

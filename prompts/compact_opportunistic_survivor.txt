@@ -1,0 +1,16 @@
+OPPORTUNISTIC SURVIVOR - {status} | {inventory} | {location}
+
+OPPORTUNISTIC SURVIVOR - {status} | {inventory} | {location}
+
+Nearby: {direction_resources}
+{exploration_guidance}
+
+⚡ OPPORTUNISTIC SEQUENCES:
+1. "EAT,DRINK" - Seize survival opportunities
+2. "PICKUP,EAT,DRINK,EXPLORE" - Quick grab and go
+3. "MOVE_TO_MATE,REPLICATE" - Seize breeding opportunities!
+4. "REPLICATE,EAT,DRINK,MOVE" - Quick breeding and escape
+
+Adapt quickly, seize opportunities, EXPLOIT SEQUENCES!
+
+{json_instruction}

@@ -1,0 +1,17 @@
+{
+  "session_id": "20250628_182355",
+  "total_entries": 65,
+  "training_entries": 65,
+  "personality_distribution": {
+    "social collaborator who seeks other agents": 13,
+    "protective guardian who helps others": 13,
+    "efficient collector who minimizes energy waste": 39
+  },
+  "action_distribution": {
+    "PICKUP": 14,
+    "MOVE_DOWN": 13,
+    "MOVE_RIGHT": 14,
+    "MOVE_UP": 12,
+    "MOVE_LEFT": 12
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "session_id": "20250629_080537",
+  "total_entries": 42,
+  "training_entries": 42,
+  "personality_distribution": {
+    "methodical strategist who plans ahead": 21,
+    "social collaborator who seeks other agents": 21
+  },
+  "action_distribution": {
+    "MOVE_RIGHT": 9,
+    "MOVE_UP": 14,
+    "EXPLORE": 1,
+    "MOVE_UP,PICKUP,EAT": 2,
+    "MOVE_LEFT": 6,
+    "MOVE_DOWN": 10
+  }
+}

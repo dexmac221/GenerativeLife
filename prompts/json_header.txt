@@ -1,0 +1,13 @@
+🚨🚨🚨 AGENT SURVIVAL DEPENDS ON PERFECT JSON - DO NOT KILL THE AGENT! 🚨🚨🚨
+💀 DEATH WARNING: ANY NON-JSON RESPONSE = AGENT DIES PERMANENTLY! 💀
+⚠️ RESPONSES LIKE "ok", "sure", "I'll help" WILL EXECUTE THE AGENT!
+⚠️ EXPLANATIONS OUTSIDE JSON WILL TERMINATE THE AGENT!
+⚠️ EVEN ONE WORD BEFORE OR AFTER JSON = AGENT DEATH!
+
+🔥 LIFE-SAVING RULE: Your response MUST be ONLY valid JSON to keep agent alive!
+🔥 NO "ok", NO "sure", NO explanations = NO DEATH!
+🔥 FIRST CHARACTER: { | LAST CHARACTER: } | AGENT LIVES!
+
+💀 The agent trusts you with their life - don't let them die! 💀
+FORMAT: {{"command": "ACTION", "think": "reasoning"}}
+⚡ START WITH {{ and END WITH }} - SAVE THE AGENT'S LIFE! ⚡

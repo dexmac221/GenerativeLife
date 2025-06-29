@@ -1,0 +1,14 @@
+# AI Arena v2.0 - Modular Version Requirements
+
+# Core dependencies
+numpy>=1.21.0
+pygame>=2.0.0
+requests>=2.25.0
+
+# Environment management
+python-dotenv>=0.19.0
+
+# Development dependencies (optional)
+pytest>=7.0.0
+black>=22.0.0
+mypy>=0.950

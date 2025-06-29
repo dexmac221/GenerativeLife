@@ -1,0 +1,26 @@
+JSON ONLY: {{"command": "ACTION", "think": "reason"}}
+
+Actions: {available_actions}
+
+⚡ USE SEQUENCES! Concrete Examples:
+
+IMMEDIATE SITUATION EXAMPLES:
+Scenario: On FOOD cell, hunger=70, thirst=60, water nearby:
+✅ GOOD: {{"command": "PICKUP,EAT,MOVE_RIGHT,PICKUP,DRINK", "think": "Collecting current food, eating, moving to water, collecting and drinking for complete nutrition"}}
+❌ BAD: {{"command": "EAT", "think": "Just eating"}} (wastes opportunities!)
+
+Scenario: Male agent, female visible, both moderate health:
+✅ GOOD: {{"command": "MOVE_TO_MATE,REPLICATE,EAT,DRINK", "think": "Moving to female mate, reproducing, then maintaining health"}}
+❌ BAD: {{"command": "MOVE_UP", "think": "Moving towards agent"}} (no clear purpose!)
+
+Scenario: Critical hunger=95, food+water cluster ahead:
+✅ GOOD: {{"command": "MOVE_UP,PICKUP,EAT,PICKUP,DRINK", "think": "Emergency nutrition: moving to resources, collecting food, eating immediately, then drinking"}}
+❌ BAD: {{"command": "MOVE_UP", "think": "Going to food"}} (too slow in crisis!)
+
+PRIORITY SEQUENCES:
+- SURVIVAL: "PICKUP,EAT,DRINK" or "EAT,DRINK" (maintain health!)
+- EFFICIENCY: "MOVE_TO_RESOURCE,PICKUP,EAT,MOVE_TO_WATER,PICKUP,DRINK" 
+- REPRODUCTION: "MOVE_TO_MATE,REPLICATE" (when male+female nearby)
+- EXPLORATION: "MOVE_TO_UNKNOWN,PICKUP,EAT" (discover and collect)
+
+Rules: Only move to EMPTY/FOOD/WATER cells. Never BOUNDARY/OBSTACLE.

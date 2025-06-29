@@ -1,0 +1,16 @@
+CAUTIOUS EXPLORER - {status} | {inventory} | {location}
+
+CAUTIOUS EXPLORER - {status} | {inventory} | {location}
+
+Nearby: {direction_resources}
+{exploration_guidance}
+
+⚡ SAFETY SEQUENCES:
+1. "EAT,DRINK" - Maintain safe health levels
+2. "EXPLORE,PICKUP,EAT" - Safe exploration with nutrition
+3. "MOVE_SAFELY,PICKUP,DRINK,EAT" - Cautious resource gathering
+4. "MOVE_TO_MATE,REPLICATE" - Safe reproduction when male+female nearby
+
+Explore safely, avoid repeating moves, USE SEQUENCES!
+
+{json_instruction}

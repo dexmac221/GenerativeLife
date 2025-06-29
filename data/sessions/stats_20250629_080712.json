@@ -1,0 +1,20 @@
+{
+  "session_id": "20250629_080712",
+  "total_entries": 42,
+  "training_entries": 42,
+  "personality_distribution": {
+    "protective guardian who helps others": 7,
+    "efficient collector who minimizes energy waste": 14,
+    "cautious explorer who prioritizes safety": 14,
+    "opportunistic survivor who adapts quickly": 7
+  },
+  "action_distribution": {
+    "EXPLORE": 1,
+    "MOVE_UP,PICKUP,EAT": 3,
+    "MOVE_UP": 26,
+    "MOVE_DOWN": 3,
+    "MOVE_RIGHT": 6,
+    "MOVE_LEFT,PICKUP,EAT": 2,
+    "MOVE_LEFT": 1
+  }
+}

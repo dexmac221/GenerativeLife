@@ -1,0 +1,19 @@
+{
+  "session_id": "20250628_111148",
+  "total_entries": 121,
+  "training_entries": 121,
+  "personality_distribution": {
+    "opportunistic survivor who adapts quickly": 121
+  },
+  "action_distribution": {
+    "MOVE_UP": 39,
+    "MOVE_RIGHT": 17,
+    "MOVE_LEFT": 17,
+    "MOVE_RIGHT,PICKUP,EAT": 2,
+    "MOVE_DOWN": 37,
+    "MOVE_UP,PICKUP,EAT": 5,
+    "MOVE_LEFT,PICKUP,EAT": 2,
+    "MOVE_RIGHT,PICKUP,EAT,DRINK": 1,
+    "MOVE_DOWN,PICKUP,EAT": 1
+  }
+}

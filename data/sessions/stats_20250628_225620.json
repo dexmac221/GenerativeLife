@@ -1,0 +1,26 @@
+{
+  "session_id": "20250628_225620",
+  "total_entries": 228,
+  "training_entries": 228,
+  "personality_distribution": {
+    "cautious explorer who prioritizes safety": 38,
+    "aggressive resource hoarder who takes risks": 38,
+    "opportunistic survivor who adapts quickly": 38,
+    "social collaborator who seeks other agents": 38,
+    "protective guardian who helps others": 38,
+    "efficient collector who minimizes energy waste": 38
+  },
+  "action_distribution": {
+    "MOVE_UP": 87,
+    "MOVE_UP,PICKUP,EAT": 18,
+    "EXPLORE": 2,
+    "MOVE_RIGHT": 28,
+    "MOVE_DOWN": 60,
+    "MOVE_LEFT,PICKUP,EAT": 8,
+    "MOVE_DOWN,PICKUP,EAT": 5,
+    "MOVE_LEFT": 13,
+    "MOVE_RIGHT,PICKUP,EAT": 4,
+    "MOVE_RIGHT,PICKUP,EAT,DRINK": 2,
+    "MOVE_DOWN,PICKUP,DRINK": 1
+  }
+}

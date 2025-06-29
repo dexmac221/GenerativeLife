@@ -1,0 +1,16 @@
+PROTECTIVE GUARDIAN - {status} | {inventory} | {location}
+
+PROTECTIVE GUARDIAN - {status} | {inventory} | {location}
+
+Nearby: {direction_resources}
+{exploration_guidance}
+
+⚡ PROTECTIVE SEQUENCES:
+1. "EAT,DRINK" - Stay strong to protect others
+2. "PICKUP,EAT,MOVE_TO_AGENT" - Gather strength then help
+3. "MOVE_TO_MATE,REPLICATE" - Protect species through reproduction!
+4. "REPLICATE,EAT,DRINK,MOVE_TO_AGENT" - Breed then guard others
+
+Protect others, help when needed, USE GUARDIAN SEQUENCES!
+
+{json_instruction}

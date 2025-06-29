@@ -1,0 +1,68 @@
+name: Basic Tests
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Check import and basic functionality
+        run: |
+          python -c "
+          import sys
+          sys.path.append('.')
+          from modular.core.simulation import Simulation
+          from modular.core.world import World
+          from modular.ai.vlm_controller import VLMController
+          print('✅ All imports successful')
+
+          # Create basic config
+          config = {
+              'min_breeding_age': 50,
+              'pregnancy_duration': 30,
+              'max_population': 50,
+              'observation_radius': 2,
+              'width': 10,
+              'height': 10,
+              'num_agents': 2,
+              'survival_mode': 'normal',
+              'resource_mode': 'abundant'
+          }
+
+          # Test simulation creation
+          world = World(width=10, height=10)
+          controller = VLMController()
+          sim = Simulation(world, controller, config)
+
+          # Test agent creation
+          agent = sim.create_agent()
+          print(f'✅ Agent created: {agent.id}')
+          print('✅ Basic functionality test passed')
+          "
+
+      - name: Test data analysis script
+        run: |
+          # Create dummy data for testing
+          mkdir -p data/sessions
+          echo '{"timestamp": 1234567890, "agent_id": "Agent_0", "agent_info": {"gender": "MALE", "personality": "test"}, "decision": "MOVE_UP", "outcome": {"success": true}}' > data/sessions/test.jsonl
+          python analyze_data.py

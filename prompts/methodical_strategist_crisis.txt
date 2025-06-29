@@ -1,0 +1,5 @@
+SYSTEMATIC EMERGENCY RESPONSE:
+1. Assess available resources (inventory check)
+2. If resources available: CONSUME IMMEDIATELY
+3. If no resources: calculate nearest resource location
+4. Execute optimal survival action with PRECISION

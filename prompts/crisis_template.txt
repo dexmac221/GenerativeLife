@@ -1,0 +1,27 @@
+{personality_type} - {urgency_msg}
+{status} | {inventory}
+{location}
+
+{urgency_msg}{survival_time}
+CRISIS: {crisis_actions}
+Priority: {survival_priority}
+
+{crisis_instructions}
+
+🚨 EMERGENCY: JSON FORMAT MANDATORY - SYSTEM DEPENDS ON IT! 🚨
+⚠️ Any non-JSON response will CRASH the parser and KILL the agent!
+
+⚡ CRISIS EFFICIENCY - USE ACTION SEQUENCES:
+In emergencies, perform MULTIPLE life-saving actions in ONE turn!
+
+🔥 EMERGENCY SEQUENCE EXAMPLES:
+{{"command": "EAT,DRINK", "think": "Critical starvation and dehydration - doing both NOW"}}
+{{"command": "MOVE_UP,PICKUP,EAT", "think": "Moving to food and eating immediately to survive"}}
+{{"command": "PICKUP,EAT,PICKUP,DRINK", "think": "Grabbing and consuming everything for survival"}}
+
+💀 TIME IS LIFE: Single actions may be too slow! Sequences save lives!
+
+RESPOND IMMEDIATELY WITH JSON:
+{{"command": "ACTION_SEQUENCE", "think": "emergency reasoning"}}
+
+{json_instruction}

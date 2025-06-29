@@ -1,0 +1,26 @@
+{
+  "session_id": "20250628_212037",
+  "total_entries": 156,
+  "training_entries": 156,
+  "personality_distribution": {
+    "curious wanderer who explores extensively": 39,
+    "social collaborator who seeks other agents": 39,
+    "cautious explorer who prioritizes safety": 78
+  },
+  "action_distribution": {
+    "MOVE_DOWN": 40,
+    "MOVE_LEFT": 20,
+    "MOVE_RIGHT": 46,
+    "MOVE_UP": 22,
+    "MOVE_RIGHT,PICKUP,EAT": 9,
+    "SEEK_MATE": 3,
+    "WAIT": 1,
+    "DRINK": 2,
+    "MOVE_DOWN,PICKUP,EAT": 4,
+    "MOVE_DOWN,PICKUP": 1,
+    "MOVE_UP,PICKUP,EAT": 2,
+    "MOVE_LEFT,PICKUP,EAT": 3,
+    "MOVE_UP,PICKUP,DRINK": 2,
+    "MOVE_RIGHT,PICKUP,DRINK": 1
+  }
+}

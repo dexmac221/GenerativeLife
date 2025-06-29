@@ -1,0 +1,26 @@
+{
+  "session_id": "20250628_224843",
+  "total_entries": 444,
+  "training_entries": 444,
+  "personality_distribution": {
+    "protective guardian who helps others": 296,
+    "efficient collector who minimizes energy waste": 79,
+    "curious wanderer who explores extensively": 69
+  },
+  "action_distribution": {
+    "EXPLORE": 35,
+    "MOVE_UP": 118,
+    "MOVE_DOWN": 94,
+    "MOVE_UP,PICKUP,EAT": 30,
+    "MOVE_RIGHT": 86,
+    "MOVE_LEFT": 52,
+    "MOVE_RIGHT,PICKUP,EAT": 5,
+    "MOVE_DOWN,PICKUP,EAT": 9,
+    "MOVE_LEFT,PICKUP,EAT": 5,
+    "WAIT": 1,
+    "MOVE_LEFT,PICKUP,EAT,DRINK": 1,
+    "MOVE_RIGHT,PICKUP,EAT,DRINK": 3,
+    "MOVE_UP,PICKUP,EAT,DRINK": 4,
+    "MOVE_DOWN,PICKUP,EAT,DRINK": 1
+  }
+}

@@ -1,0 +1,13 @@
+IMPORTANT: JSON Response Required
+
+This is a retry attempt due to a previous JSON parsing error.
+
+Please ensure your response follows these requirements:
+- Valid JSON syntax only
+- Proper quote marks around all keys and string values
+- No additional text before or after the JSON object
+- Must start with { and end with }
+
+Required JSON format: {"command": "ACTION", "think": "reasoning"}
+
+Generate only valid JSON to ensure proper system function.

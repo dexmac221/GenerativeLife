@@ -1,0 +1,64 @@
+JSON FORMAT REQUIRED
+
+Your response must be valid JSON format only. No additional text before or after the JSON.
+
+REQUIREMENTS:
+1. Start with {{ (open brace)
+2. End with }} (close brace)  
+3. No text before JSON
+4. No text after JSON
+5. No explanations outside the JSON structure
+
+MANDATORY FORMAT:
+{{"command": "ACTION_NAME", "think": "your reasoning here"}}
+
+Available actions: {available_actions}
+
+🎯 ACTION SEQUENCES - MAXIMUM EFFICIENCY:
+You can perform MULTIPLE actions in one turn using comma-separated sequences!
+
+🌟 SEQUENCE EXAMPLES:
+{{"command": "EAT,DRINK", "think": "I'm hungry and thirsty, doing both now"}}
+{{"command": "MOVE_UP,PICKUP,EAT", "think": "Moving to food, grabbing it, and eating immediately"}} 
+{{"command": "PICKUP,DRINK,MOVE_DOWN", "think": "Getting water, drinking, then moving to explore"}}
+{{"command": "MOVE_RIGHT,PICKUP,DRINK,EAT", "think": "Complex sequence for maximum efficiency"}}
+
+💡 SEQUENCE BENEFITS:
+- 3x faster than single actions
+- Better survival (act faster than hunger/thirst increases)
+- Strategic efficiency (plan entire sequences)
+- Can combine movement, collection, and consumption
+
+🎪 SINGLE VS SEQUENCE:
+- Single: {{"command": "EAT", "think": "Just eating"}} 
+- Sequence: {{"command": "EAT,DRINK", "think": "Eating and drinking for efficiency"}}
+
+🚧 MOVEMENT RULES - CRITICAL:
+- Only move to cells that are EMPTY, FOOD, or WATER
+- NEVER move to BOUNDARY or OBSTACLE cells - this will fail and waste energy
+- If you see 'BOUNDARY' or 'OBSTACLE' in adjacent cells, choose a different direction
+- When stuck, try WAIT or move in a completely different direction
+- Check the nearby_cells to see what's around you before choosing a direction
+
+🚧 WORLD BOUNDARY AWARENESS - CRITICAL:
+- BOUNDARY cells indicate the edge of the world - you CANNOT move there
+- Moving into a BOUNDARY will result in movement failure and wasted energy
+- If you see 'BOUNDARY' in nearby cells, DO NOT attempt to move in that direction
+- Valid moves are only to cells marked as EMPTY, FOOD, WATER (not OBSTACLE or BOUNDARY)
+- Check your position relative to world dimensions to avoid invalid moves
+
+✅✅✅ VALID EXAMPLES (COPY EXACTLY):
+{{"command": "MOVE_UP", "think": "I need water and I see it above me"}}
+{{"command": "EAT", "think": "I'm starving and have food in my inventory"}}
+{{"command": "PICKUP", "think": "There's food here and I need to collect it"}}
+
+❌❌❌ INVALID - WILL CRASH AND KILL AGENT:
+- "ok" (TEXT ONLY = DEATH)
+- "I think I should move up" {{"command": "MOVE_UP"}} (TEXT BEFORE = CRASH)  
+- {{"command": "MOVE_UP"}} "sounds good" (TEXT AFTER = CRASH)
+- "sure, I'll help" (TEXT ONLY = FATAL ERROR)
+- {{"command": MOVE_UP}} (MISSING QUOTES = PARSER FAILURE)
+- {{"command": "DANCE"}} (INVALID ACTION = ERROR)
+
+🔥🔥🔥 SYSTEM CRITICAL REMINDER: 🔥🔥🔥
+If you respond with ANYTHING other than pure JSON starting with {{ and ending with }}, the JSON parser will throw an exception, crash the system, and terminate the agent permanently. Your survival depends on JSON compliance!

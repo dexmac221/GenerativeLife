@@ -1,0 +1,14 @@
+{
+  "session_id": "20250628_143438",
+  "total_entries": 4,
+  "training_entries": 4,
+  "personality_distribution": {
+    "cautious explorer who prioritizes safety": 2,
+    "opportunistic survivor who adapts quickly": 2
+  },
+  "action_distribution": {
+    "MOVE_DOWN": 1,
+    "MOVE_LEFT": 2,
+    "MOVE_UP": 1
+  }
+}

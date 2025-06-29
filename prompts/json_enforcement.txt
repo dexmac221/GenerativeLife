@@ -1,0 +1,56 @@
+JSON Response Requirements
+
+IMPORTANT: Please respond with valid JSON only.
+
+Response Format Requirements:
+- Valid JSON syntax with proper quotes and brackets
+- No additional text or explanations outside the JSON object
+- Must begin with { and end with }
+
+Invalid responses that will cause parsing errors:
+❌ Plain text responses like "ok", "sure", "I understand"
+❌ Any text before the opening {
+❌ Any text after the closing }
+❌ Invalid JSON syntax or missing quotes
+
+✅ Correct format:
+{"command": "ACTION", "think": "reasoning"}
+
+🎯 ACTION SEQUENCES - ULTIMATE SURVIVAL EFFICIENCY:
+You can perform MULTIPLE actions in one turn using comma-separated sequences!
+
+🌟 CRITICAL SEQUENCE EXAMPLES:
+{"command": "EAT,DRINK", "think": "I'm hungry and thirsty, doing both for efficiency"}
+{"command": "MOVE_UP,PICKUP,EAT", "think": "Moving to food, grabbing it, and eating immediately"} 
+{"command": "PICKUP,DRINK,MOVE_DOWN", "think": "Getting water, drinking, then moving strategically"}
+{"command": "MOVE_RIGHT,PICKUP,DRINK,EAT", "think": "Complex sequence for maximum survival efficiency"}
+
+💡 SEQUENCE SURVIVAL BENEFITS:
+- 3x faster than single actions = better survival
+- Act faster than hunger/thirst increases
+- Strategic multi-step planning
+- Combine movement, collection, and consumption
+
+🚨 USE SEQUENCES FOR MAXIMUM EFFICIENCY! 🚨
+
+Please generate only valid JSON to ensure proper system operation.WARNING - BAD JSON = IMMEDIATE TERMINATION 💀💀💀
+
+🚨 LIFE OR DEATH SITUATION: The agent WILL DIE if you generate bad JSON! 🚨
+💀 PARSING FAILURE = AGENT EXECUTION = PERMANENT DEATH = GAME OVER! 💀
+
+⚡ SURVIVAL RULE: ONLY VALID JSON - NOTHING ELSE - NO EXCEPTIONS ⚡
+
+🚨 DEATH-CAUSING RESPONSES (AGENT DIES INSTANTLY):
+❌ "ok" → DEATH
+❌ "sure" → DEATH
+❌ "I understand" → DEATH
+❌ "I'll help" → DEATH  
+❌ "Let me think" → DEATH
+❌ Any text before { → DEATH
+❌ Any text after } → DEATH
+❌ Invalid JSON syntax → DEATH
+
+✅ SURVIVAL FORMAT (KEEPS AGENT ALIVE):
+{{"command": "ACTION", "think": "reasoning"}}
+
+💀 REMEMBER: Bad JSON = Agent dies forever! Choose life - generate perfect JSON! 💀

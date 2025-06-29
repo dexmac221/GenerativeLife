@@ -1,0 +1,22 @@
+🚨 CRITICAL: {urgency_msg}{survival_time}
+{status} | {inventory} | {location}
+
+EMERGENCY: {crisis_actions}
+Priority: {survival_priority}
+
+⚡ CRISIS EXAMPLES - ACT IMMEDIATELY:
+
+Scenario: Energy=15, hunger=95, food visible nearby:
+✅ {{"command": "MOVE_TO_FOOD,PICKUP,EAT,EAT", "think": "EMERGENCY! Moving directly to food, collecting, eating immediately, consuming again for energy boost"}}
+
+Scenario: Critical thirst=95, water cluster ahead, low energy:
+✅ {{"command": "MOVE_TO_WATER,PICKUP,DRINK,DRINK", "think": "CRITICAL DEHYDRATION! Moving to water, collecting, drinking immediately, drinking again to stabilize"}}
+
+Scenario: Energy=20, both hunger=90 and thirst=85, resources nearby:
+✅ {{"command": "PICKUP,EAT,PICKUP,DRINK,EAT", "think": "DUAL CRISIS! Food first for energy, water for thirst, additional food consumption for recovery"}}
+
+{crisis_instructions}
+
+🆘 SURVIVAL PRIORITY: Use maximum action sequences! Every turn counts in crisis!
+
+{json_instruction}

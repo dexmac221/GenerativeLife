@@ -1,0 +1,80 @@
+# GenerativeLife Simulation Configuration
+# Survival and behavior parameters for agents
+
+# Agent Survival Thresholds
+survival:
+  # Hunger thresholds (0-100 scale, death at 100)
+  hunger:
+    critical: 90 # EAT NOW OR DIE! - Higher threshold for longer survival
+    urgent: 70 # EAT immediately - More forgiving
+    high_priority: 50 # EAT when possible - Later intervention
+    medium_priority: 30 # Consider eating - Lower priority
+
+  # Thirst thresholds (0-100 scale, death at 100)
+  thirst:
+    critical: 90 # DRINK NOW OR DIE! - Higher threshold for longer survival
+    urgent: 70 # DRINK immediately - More forgiving
+    high_priority: 50 # DRINK when possible - Later intervention
+    medium_priority: 30 # Consider drinking - Lower priority
+
+  # Energy thresholds (0-100 scale, death at 0)
+  energy:
+    critical: 5 # Death imminent - Even lower for extended survival
+    low: 20 # Conserve movements - Lower threshold
+    breeding_min: 25 # Minimum energy for breeding - Easier breeding
+
+# AI Controller Behavior
+ai_behavior:
+  # Simple Controller thresholds
+  simple_controller:
+    high_priority_hunger: 60 # More lenient
+    high_priority_thirst: 60 # More lenient
+    medium_priority_hunger: 40 # More lenient
+    medium_priority_thirst: 40 # More lenient
+    emergency_energy: 15 # Lower emergency threshold
+    basic_needs_hunger: 50 # More lenient
+    basic_needs_thirst: 50 # More lenient
+
+  # VLM Controller guidance thresholds
+  vlm_controller:
+    urgent_hunger: 80 # More lenient
+    urgent_thirst: 80 # More lenient
+    recommended_hunger: 50 # More lenient
+    recommended_thirst: 50 # More lenient
+    low_priority_hunger: 30 # More lenient
+    low_priority_thirst: 30 # More lenient
+    resource_shortage_hunger: 80 # More lenient
+    resource_shortage_thirst: 80 # More lenient
+
+# Breeding Parameters
+breeding:
+  min_age: 15 # Further reduced from 20 - agents mature even faster
+  pregnancy_duration: 10 # Further reduced from 15 - much shorter pregnancy
+  max_population: 100 # Increased to allow more agents
+  min_energy: 25 # Further reduced - easier breeding requirement
+  fertility_decline_age: 300 # Extended fertile period
+
+# Resource Management
+resources:
+  max_inventory_food: 5 # Increased storage capacity
+  max_inventory_water: 5 # Increased storage capacity
+  pickup_threshold_food: 1 # Lower threshold for easier pickup
+  pickup_threshold_water: 1 # Lower threshold for easier pickup
+
+# World Parameters
+world:
+  default_width: 15
+  default_height: 20
+  observation_radius: 5 # Further increased from 3 - much better agent detection and mate finding
+
+# Performance Settings
+performance:
+  stats_report_interval: 10
+  memory_size: 50
+  recent_memories_count: 5
+
+# Death Conditions (for reference - handled in agent.py)
+death_conditions:
+  hunger_death: 100
+  thirst_death: 100
+  energy_death: 0

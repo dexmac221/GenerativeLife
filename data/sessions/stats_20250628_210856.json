@@ -1,0 +1,17 @@
+{
+  "session_id": "20250628_210856",
+  "total_entries": 20,
+  "training_entries": 20,
+  "personality_distribution": {
+    "protective guardian who helps others": 10,
+    "efficient collector who minimizes energy waste": 10
+  },
+  "action_distribution": {
+    "MOVE_UP": 10,
+    "MOVE_LEFT,PICKUP,EAT": 1,
+    "MOVE_UP,PICKUP,EAT": 1,
+    "EXPLORE": 1,
+    "MOVE_RIGHT": 3,
+    "MOVE_DOWN": 4
+  }
+}

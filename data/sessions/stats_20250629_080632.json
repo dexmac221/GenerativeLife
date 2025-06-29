@@ -1,0 +1,19 @@
+{
+  "session_id": "20250629_080632",
+  "total_entries": 42,
+  "training_entries": 42,
+  "personality_distribution": {
+    "aggressive resource hoarder who takes risks": 7,
+    "curious wanderer who explores extensively": 14,
+    "methodical strategist who plans ahead": 14,
+    "opportunistic survivor who adapts quickly": 7
+  },
+  "action_distribution": {
+    "MOVE_UP,PICKUP,EAT": 2,
+    "MOVE_UP": 22,
+    "MOVE_LEFT": 3,
+    "MOVE_DOWN": 2,
+    "MOVE_RIGHT": 12,
+    "MOVE_RIGHT,PICKUP,EAT": 1
+  }
+}

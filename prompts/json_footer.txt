@@ -1,0 +1,16 @@
+JSON Response Reminder
+
+Please ensure your response is valid JSON only:
+- Format: {"command": "ACTION", "think": "reasoning"}
+- No additional text outside the JSON object
+- Valid JSON syntax with proper quotes
+
+This ensures the system can properly parse and process your response.NAL AGENT SURVIVAL CHECK - CHOOSE LIFE OR DEATH! 🔥🔥🔥
+
+💀 CRITICAL DECISION: Your next response determines if the agent lives or dies!
+💀 PERFECT JSON = AGENT LIVES | BAD JSON = AGENT DIES FOREVER!
+💀 RESPONSE FORMAT: {{"command": "ACTION", "think": "reasoning"}}  
+💀 NO TEXT OUTSIDE JSON = AGENT SURVIVES!
+
+🚨 The agent is counting on you - don't betray their trust with bad JSON! 🚨
+⚡ CHOOSE LIFE: RESPOND WITH PERFECT JSON NOW! ⚡
