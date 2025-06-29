@@ -2,6 +2,24 @@
 
 Thank you for your interest in contributing to GenerativeLife! This document provides guidelines for contributing to the project.
 
+---
+
+**Table of Contents**
+
+- [Quick Start](#-quick-start)
+- [Development](#️-development)
+- [Areas for Contribution](#-areas-for-contribution)
+- [Submitting Changes](#-submitting-changes)
+- [Bug Reports](#-bug-reports)
+- [Feature Requests](#-feature-requests)
+- [Documentation](#-documentation)
+- [Review Process](#-review-process)
+- [Code of Conduct](#-code-of-conduct)
+- [License](#-license)
+- [Getting Help](#-getting-help)
+
+---
+
 ## 🚀 Quick Start
 
 1. **Fork the repository** on GitHub
@@ -135,6 +153,32 @@ For new features, please:
 - Update configuration documentation
 
 ## 🔄 Review Process
+
+- Maintain backward compatibility when possible
+- Ensure code follows project patterns
+- Test with multiple agent configurations
+- Verify data collection still works
+- Pull Requests are reviewed by project maintainers. Automated CI checks must pass before merging. Review time may vary, but we aim to respond within a few days.
+
+## 🤝 Code of Conduct
+
+This project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this standard and help create a welcoming environment for all.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## 📋 Issue & PR Templates
+
+Please use the provided GitHub issue and pull request templates when submitting bugs, features, or changes. This helps us triage and review contributions efficiently.
+
+## 📞 Getting Help
+
+- Create an issue for questions
+- Include relevant code and configuration
+- Be specific about what you're trying to achieve
+
+Thank you for contributing to GenerativeLife! 🎉
 
 - Maintain backward compatibility when possible
 - Ensure code follows project patterns

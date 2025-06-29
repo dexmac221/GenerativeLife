@@ -57,11 +57,14 @@ def analyze_session_data(session_file):
         print(f"    Gender: {genders[0]}")
         print(f"    Personality: {personalities[0]}")
 
-        # Energy progression
-        energies = [entry['agent_info']['energy'] for entry in agent_data]
+        # Energy progression (robust to missing energy)
+        energies = [entry['agent_info'].get(
+            'energy', None) for entry in agent_data if 'energy' in entry['agent_info']]
         if energies:
             print(
                 f"    Energy: {energies[0]} → {energies[-1]} (Δ{energies[-1] - energies[0]})")
+        else:
+            print("    Energy: (no energy data in agent_info)")
 
     # Compound action analysis
     compound_actions = [d for d in decisions if ',' in d]
